@@ -1,0 +1,205 @@
+$secondary-color: rgb(0, 133, 191);
+
+@import "node_modules/materialize-css/sass/materialize.scss";
+
+body {
+  background: rgb(155, 233, 250);
+  color: rgb(4, 142, 221);
+  font-family: Montserrat;
+}
+
+select.browser-default {
+    position: static;
+    pointer-events: all;
+    opacity: 1;
+    background-color: rgba(255,255,255,0.9) !important;
+    width: 100% !important;
+    padding: 5px !important;
+    border: 1px solid #f2f2f2 !important;
+    border-radius: 2px !important;
+    height: 3rem !important;
+}
+
+.landing {
+  margin: 30px auto;
+}
+
+.iphone {
+  max-width: 100%;
+}
+
+.site-footer{
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.login-box,
+.signup-box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.runigram {
+    font-size: 42px;
+    color: $secondary-color !important;
+}
+
+.signup-form {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.signup-form h2 {
+  color: #a5a7aa;
+  font-size: 1.2em;
+}
+
+.signup-form .btn.btn-fb {
+  background-color: #4090db;
+  font-size: .9em;
+}
+
+.signup-form .btn.btn-fb:hover {
+  background-color: #2d6599;
+}
+
+.header {
+  background-color: rgb(204, 206, 209);
+  color: #4090db;
+  box-shadow: none;
+  border-bottom:  1px solid #edeeee;
+}
+
+.timeline {
+  padding:  30px 0;
+}
+
+$avatar-size: 48px;
+
+.avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px
+}
+
+.card small.time {
+  line-height: $avatar-size;
+}
+
+.card p {
+  padding: 20px 0;
+}
+
+.card .likes {
+  line-height: 30px;
+  margin-left: 12px;
+}
+
+.card i {
+  font-size: 30px;
+}
+
+.card .fa-ban {
+  color: rgb(0, 0, 0);
+}
+
+.card .fa-heart {
+  color: rgb(255, 0, 0);
+  display: none;
+}
+
+.card.liked {
+  .fa-heart {
+    display: block;
+  }
+
+  .fa-ban {
+    display: none;
+  }
+}
+
+.form-upload {
+
+span, button {
+  color: white;
+}
+
+.fileUpload {
+  position:  relative;
+  overflow: hidden;
+  margin: 10px;
+
+  input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+}
+
+.user-page {
+  margin-top: 30px;
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  .picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:hover {
+      .picture {
+        filter: blur(5px) grayscale(100%);
+      }
+
+      .likes {
+        display: flex;
+      }
+    }
+
+    .picture {
+      margin-bottom: 20px;
+      display: block;
+      max-width: 100%;
+      max-height: 100%
+    }
+
+    .likes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: red;
+      font-size: 34px;
+      display: none;
+    }
+
+    .fa-heart {
+      margin-right: 8px;
+      display: inline-block;
+    }
+  }
+}
